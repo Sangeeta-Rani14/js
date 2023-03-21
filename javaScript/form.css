@@ -1,0 +1,154 @@
+/* Set background color and font-family */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the form */
+form {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form headings */
+form h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.header {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.name {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: start;
+}
+
+.add {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+/* Style the form inputs and labels */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="submit"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #6bb9f0;
+    box-shadow: 0px 0px 10px 2px rgba(107, 185, 240, 0.2);
+}
+
+/* Style the form buttons */
+button,
+input[type="submit"] {
+    margin-top: 10px;
+    /* margin-left: 600px; */
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #305032;
+}
+
+/* Style the form dropdowns */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+}
+
+/* Style the form radio buttons */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Style the form row and column layout */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group.col-md-4 {
+    flex-basis: calc(33.33% - 10px);
+}
+
+.form-group.col-md-6 {
+    flex-basis: calc(50% - 10px);
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+
+    .form-group.col-md-4,
+    .form-group.col-md-6 {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    textarea,
+    select {
+        font-size: 14px;
+    }
+}
